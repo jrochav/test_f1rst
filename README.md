@@ -57,8 +57,9 @@ Os testes seguem o padrão solicitado no teste, porém, podem ser executados ind
 ## Como Executar os Testes
 ```bash
 npx cypress open (via interface cypress)
-```
 
+npx cypress run (via terminal)
+```
 ## Autor
 ```bash
 João Victor Rocha

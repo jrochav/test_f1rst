@@ -26,13 +26,20 @@ module.exports = defineConfig({
       on("file:preprocessor", createBundler({
         plugins: [createEsbuildPlugin(config)]
       }));
-      
+
+      on('task', {
+        log(message) {
+          console.log(message);
+          return null;
+        }
+      });
+
       config.env.LOGIN_EMAIL = process.env.LOGIN_EMAIL;
       config.env.LOGIN_PASSWORD = process.env.LOGIN_PASSWORD;
       config.env.SEARCHED_ITEM = process.env.SEARCHED_ITEM;
       config.env.USER_NAME = process.env.USER_NAME;
       config.env.TRELLO_ACTION_ID = process.env.TRELLO_ACTION_ID;
-      
+
       return config;
     }
   }
