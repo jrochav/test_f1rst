@@ -1,0 +1,22 @@
+{
+  "name": "teste-automacao-f1rst",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "cypress run",
+    "open": "cypress open"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^22.2.0",
+    "cypress": "^14.5.2"
+  },
+  "devDependencies": {
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.2.5",
+    "dotenv": "^17.2.0",
+    "esbuild": "^0.25.8"
+  }
+}
